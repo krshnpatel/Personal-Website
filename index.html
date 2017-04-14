@@ -4,6 +4,7 @@
 <head>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,20 +12,61 @@
     <meta name="description" content="Krishan Patel's Personal Webpage" />
     <meta name="author" content="Krishan Patel" />
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
     <title>Krishan Patel</title>
 </head>
 
-<body>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+<body class="hide-on-med-and-down" background="img/desktopBackground.jpg">
+    <header>
+        <nav>
+            <div class="nav-wrapper light-blue darken-4">
+                <a href="#" class="brand-logo thin" id="navbarTitle">KRISHAN PATEL</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a id="linkOne" class="light">HOME</a></li>
+                    <li><a id="linkTwo" class="light">EXPERIENCE</a></li>
+                    <li><a id="linkThree" class="light">PORTFOLIO</a></li>
+                    <li><a id="linkFour" class="light">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <div class="parallax-container">
-        <div class="parallax"><img src="img/profilePicture.jpg"></div>
-    </div>
+    <main>
+        <div class="carousel carousel-slider center" id="mainCarousel" data-indicators="true">
+            <div class="carousel-fixed-item center">
+                <a class="btn waves-effect white grey-text darken-text-2">button</a>
+            </div>
+            <div class="carousel-item black white-text" href="#one!">
+                <h2>HOME</h2>
+                <p class="white-text">This is your first panel</p>
+            </div>
+            <div class="carousel-item black white-text" href="#two!">
+                <h2>EXPERIENCE</h2>
+                <p class="white-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item black white-text" href="#three!">
+                <h2>PORTFOLIO</h2>
+                <p class="white-text">This is your third panel</p>
+            </div>
+            <div class="carousel-item black white-text" href="#four!">
+                <h2>CONTACT</h2>
+                <p class="white-text">This is your third panel</p>
+            </div>
+        </div>
+    </main>
 
-    <footer>
-        krshnpatel Inc.
+    <footer class="page-footer light-blue darken-4">
+        <div class="center thin" id="footerText">
+            krshnpatel © 2017
+        </div>
     </footer>
+</body>
+
+<body class="hide-on-med-and-down" background="img/desktopBackground.jpg">
+    <!-- PASTE DESKTOP CODE HERE -->
 </body>
 
 </html>

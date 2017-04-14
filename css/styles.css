@@ -1,0 +1,30 @@
+body {
+    background-size: cover;
+    background-position-y: 40px;
+    background-position-x: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.page-footer {
+    padding: 0;
+}
+
+#footerText {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.carousel-item {
+    opacity: 0.4 !important;
+}
+
+#navbarTitle {
+    padding-left: 20px;
+}
