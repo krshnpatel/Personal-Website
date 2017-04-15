@@ -1,9 +1,8 @@
 $(document).ready(function () {
     // Initialization
     $('.carousel.carousel-slider').carousel({ fullWidth: true });
-    
-    if (innerWidth <= 635)
-    {
+
+    if (innerWidth <= 635) {
         $('body').attr('background', 'img/mobileBackground.jpg');
         $('body').css('background-position-x', 'center');
     }
@@ -25,18 +24,20 @@ $(document).ready(function () {
         $('.carousel').carousel('set', 3);
     });
 
-    $('#navbarTitle').hover(
-        function () {
-            $('.onHoverName').hide();
-            $('.indicators').hide();
-            $('#navbarTitle').removeClass("thin");
-            $('#navbarTitle').addClass("light");
-        },
-        function () {
-            $('.onHoverName').show();
-            $('.indicators').show();
-            $('#navbarTitle').addClass("thin");
-            $('#navbarTitle').removeClass("light");
-        }
-    );
+    if (innerWidth > 992) {
+        $('#navbarTitle').hover(
+            function () {
+                $('.onHoverName').hide();
+                $('.indicators').hide();
+                $('#navbarTitle').removeClass("thin");
+                $('#navbarTitle').addClass("light");
+            },
+            function () {
+                $('.onHoverName').show();
+                $('.indicators').show();
+                $('#navbarTitle').addClass("thin");
+                $('#navbarTitle').removeClass("light");
+            }
+        );
+    }
 });
