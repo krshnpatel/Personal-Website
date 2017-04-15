@@ -40,4 +40,9 @@ $(document).ready(function () {
             }
         );
     }
+    else {
+        $('#navbarTitle').click(function () {
+            $('.carousel').carousel('set', 0);
+        });
+    }
 });
