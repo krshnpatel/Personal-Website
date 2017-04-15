@@ -1,7 +1,12 @@
 $(document).ready(function () {
     // Initialization
     $('.carousel.carousel-slider').carousel({ fullWidth: true });
-    $('#mainCarousel').css('height', $('body').height() - $('footer').height() - $('nav').height());
+    
+    if (innerWidth <= 635)
+    {
+        $('body').attr('background', 'img/mobileBackground.jpg');
+        $('body').css('background-position-x', 'center');
+    }
 
     // Event Listeners
     $('#linkOne').click(function () {
@@ -22,12 +27,14 @@ $(document).ready(function () {
 
     $('#navbarTitle').hover(
         function () {
-            $('.carousel').hide();
+            $('.onHoverName').hide();
+            $('.indicators').hide();
             $('#navbarTitle').removeClass("thin");
             $('#navbarTitle').addClass("light");
         },
         function () {
-            $('.carousel').show();
+            $('.onHoverName').show();
+            $('.indicators').show();
             $('#navbarTitle').addClass("thin");
             $('#navbarTitle').removeClass("light");
         }
